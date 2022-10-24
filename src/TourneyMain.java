@@ -26,6 +26,7 @@ public class TourneyMain implements ActionListener{
     ArrayList<Match> allMatches;
     JPanel matchesFrame, rankingFrame;
     JButton updateButton;
+    int i;
     JMenuItem addTeam;
 
     public TourneyMain() {
