@@ -4,7 +4,11 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.text.DecimalFormat;
+import java.util.Date;
 import javax.swing.BorderFactory;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
@@ -74,12 +78,26 @@ public class Match implements ActionListener,Comparable {
                 team2.loss(team1);
                 cb1.setEnabled(false);
                 cb2.setEnabled(false);
+                try {
+                    PrintWriter out=new PrintWriter(new FileWriter(new File("history.txt"),true));
+                    out.println(""+(new Date())+e.getActionCommand());
+                    out.flush();
+                    out.close();
+                } catch (Exception e2) {
+                }
             }
             else{
                 team2.win(team1);
                 team1.loss(team2);
                 cb1.setEnabled(false);
                 cb2.setEnabled(false);
+                try {
+                    PrintWriter out=new PrintWriter(new FileWriter(new File("history.txt"),true));
+                    out.println(""+(new Date())+e.getActionCommand());
+                    out.flush();
+                    out.close();
+                } catch (Exception e2) {
+                }
             }
             played=true;
         }
