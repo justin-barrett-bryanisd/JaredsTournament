@@ -76,7 +76,7 @@ public class TourneyMain implements ActionListener{
         buildRankingFrame();
         frame.add(rankingFrame, BorderLayout.EAST);
 
-        frame.setPreferredSize(new Dimension(1500,500));
+        frame.setPreferredSize(new Dimension(1450,750));
         frame.pack();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);

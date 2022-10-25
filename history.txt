@@ -1,3 +1,6 @@
 Tue Oct 25 11:27:49 CDT 2022Blues beat Carrots?
 Tue Oct 25 11:27:51 CDT 2022Iguanas beat Dogs?
 Tue Oct 25 11:27:53 CDT 2022Unicorns beat Laptops?
+Tue Oct 25 11:37:41 CDT 2022Bananas beat Dogs?
+Tue Oct 25 11:38:45 CDT 2022Elephants beat Iguanas?
+Tue Oct 25 11:38:48 CDT 2022Reds beat Carrots?
